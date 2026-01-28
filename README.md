@@ -2,5 +2,6 @@
 exercises in p5.js
 
 ## todo:
-* secret words activate different colour palettes
-* gifs actually animate / as html elements
+[] secret words activate different colour palettes
+[] gifs actually animate / as html elements
+[] write ur message and send it to me as a postcard
