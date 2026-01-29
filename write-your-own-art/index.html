@@ -4,25 +4,62 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>mbomb</title>
+  <title>write your own art</title>
   <style>
     body {
       padding: 0;
       margin: 0;
       background-color: #1b1b1b;
     }
+    #controls {
+      position: absolute;
+      top: 610px;
+      left: 0;
+      display: flex;
+      gap: 10px;
+    }
+    #flavourSelect {
+      font-size: 15px;
+      padding: 4px 8px;
+      background: #2b2b2b;
+      color: #fff;
+      border: 1px solid #444;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    #userInput {
+      font-size: 15px;
+      width: 480px;
+      padding: 4px 8px;
+      background: #2b2b2b;
+      color: #fff;
+      border: 1px solid #444;
+      border-radius: 4px;
+    }
+    #userInput::placeholder {
+      color: #888;
+    }
   </style>
   <script src="./lib/p5.js"></script>
   <script src="./lib/p5.sound.js"></script>
   <!-- <script src="https://cdn.jsdelivr.net/gh/antiboredom/p5.gif.js@latest/p5.gif.min.js"></script> -->
-  <script src="sketch.js"></script>
   <script src="palettes.js"></script>
+  <script src="sketch.js"></script>
 
 </head>
 
 <body>
   <main>
   </main>
+  <div id="controls">
+    <select id="flavourSelect">
+      <option value="original">Original</option>
+      <option value="colorful">Colorful</option>
+      <option value="minimal">Minimal</option>
+      <option value="classic">Classic</option>
+    </select>
+    <input type="text" id="userInput" placeholder="Type to create art...">
+  </div>
 </body>
 
 </html>
